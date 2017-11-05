@@ -1,56 +1,144 @@
-<!doctype html>
-<html>
-	<head>
-		<title>jQuery Section Menu</title>
+﻿<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+<title>Samo's Movie</title>
 
-		<meta charset="utf-8" />
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="stylesheet" href="assets/css/jquery.sectionmenu.css" />
-
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.fragmentscroll.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.sectionmenu.min.js"></script>
-		<script type="text/javascript">
+                <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fragmentscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sectionmenu.min.js"></script>
+	        <link rel="stylesheet" href="css/footer.css">	
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/jquery.sectionmenu.css" />
+		<link rel="stylesheet" type="text/css" href="css/kagami.css" />
+		<link rel="stylesheet" type="text/css" href="css/mirror.css" />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400" />
+                <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+                <link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+		<script>document.documentElement.className = 'js';</script>
+                <script type="text/javascript">
 
 		$(window).load(function() {
 			$('body').sectionMenu().fragmentScroll();
 		});
 
 		</script>
-	</head>
-	<body>
+
+</head>
+
+	<body class="kagami-1">
 		<div id="nav">
 			<div class="container">
-				<h1>jQuery <span>Section Menu</span></h1>
-				<ul>
-					<li><a href="https://github.com/miWebb/jQuery.sectionMenu/releases">Download</a></li>
-					<li><a href="https://github.com/miWebb/jQuery.sectionMenu">Documentation</a></li>
-					<li><a href="https://github.com/miWebb">GitHub</a></li>
-					<li><a href="https://www.miwebb.com">miWebb</a></li>
-				</ul>
+				<h1>Samo's <span>Room</span></h1>
 			</div>
 		</div>
-		<div id="page">
-			<section id="home" class="container" data-section-menu="Description">
-				<h1>Description</h1>
-				<p>The jQuery section menu plugin creates a side menu <br />that allows you to scroll to the different sections <br />on the page.</p>
-				<p>Use the side menu at the right to <br />scroll trough the page.</p>
+		<main>
+			<section class="content content--full">
+				<h2 class="page-title">クソコンテンツを、貴方に。</h2>
+				<div class="slideshow">
+					<div class="slide">
+						<div class="mirror" data-visible-area="0.85">
+							<div class="mirror__side mirror__side--one">
+								<img class="mirror__img" src="img/1.png" alt="Some image" />
+							</div>
+							<div class="mirror__side mirror__side--two">
+								<img class="mirror__img" src="img/1.png" alt="Some image" />
+							</div>
+						</div>
+						<h2 class="slide__title">Samo</h2>
+					</div>
+					<div class="slide">
+						<div class="mirror" data-visible-area="0.8">
+							</div>
+						</div>
+					<nav class="slideshow__nav">
+					</nav>
+				</div>
 			</section>
-			<section id="section1" class="container" data-section-menu="Section 1">
-				<h1>Section 1</h1>
-				<p>We created some sections<br />to play with.</p>
-			</section>
-			<section id="section2" class="container" data-section-menu="Section 2">
-				<h1>Section 2</h1>
-				<p>We created some sections<br />to play with.</p>
-			</section>
-			<section id="section3" class="container" data-section-menu="Section 3">
-				<h1>Section 3</h1>
-				<p>We created some sections<br />to play with.</p>
-			</section>
-		</div>
-	</body>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/mirrorFx.js"></script>
+		<script src="js/slideshow.js"></script>
+		<script>
+		(function() {
+
+			function init() {
+				new Slideshow(document.querySelector('.slideshow'));
+			}
+			
+			var startTime = new Date().getTime();
+			imagesLoaded(document.querySelector('main'), function() {
+				var elapsed = new Date().getTime() - startTime,
+					initFn = function() {
+						document.body.classList.remove('loading');
+						setTimeout(init, 50);
+					};
+
+				if( elapsed > 2000) {
+					initFn();
+				}
+				else {
+					setTimeout(initFn, 1000);
+				}
+			});
+
+		})();
+               </script>
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Samo</h3>
+
+				<p class="footer-links">
+
+				<p class="footer-company-name">Samo &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-coffee"></i>
+					<p><a href="https://ncode.syosetu.com/n8307dx/">記憶共有的異世界物語</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-comments-o"></i>
+			        	<p><a href="https://discordapp.com/invite/3Aw8pgf">Join my DISCORD!</a></p>
+				</div>
+
+				<div>
+					<i class="fa fa-skype"></i>
+					<p><a href="skype:sakamoto00011?add">My Skype</a></p>
+				</div>
+
+			</div>
+
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>クリエイター【Samo】</span>
+					明確な目的も無しに、作りたいものを作り続ける学生クリエイターです。活動は各種サイト様にて公開していますので、下記リンクより是非どうぞ！
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://twitter.com/sakamoto0011"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/samo.jp"><i class="fa fa-instagram"></i></a>
+					<a href="https://soundcloud.com/fsfdawhd1yw3"><i class="fa fa-soundcloud"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCYWslm1OLQiT4auWAmbXuiQ?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+</body>
 </html>
