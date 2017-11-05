@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: 'メイリオ', Roboto,'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
+	font-family: '繝｡繧､繝ｪ繧ｪ', Roboto,'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
 	color: #909090;
 	background: #111;
 }
@@ -297,7 +297,7 @@ a:focus {
 }
 
 .page-title {
-	font-family: "Hiragino Kaku Gothic ProN","メイリオ";
+	font-family: "Hiragino Kaku Gothic ProN","繝｡繧､繝ｪ繧ｪ";
 	position: absolute;
 	top: 25vh;
 	pointer-events: none;
@@ -305,7 +305,7 @@ a:focus {
 	width: 100%;
 	padding: 0 1em;
 	margin: 0;
-	font-size: 2em;
+	font-size: 4em;
 	letter-spacing: 0.2em;
 	text-indent: 0.2em;
 	text-transform: uppercase;
@@ -327,7 +327,7 @@ a:focus {
 .kagami-1 .page-title {
 	z-index: 10;
 	font-size: 1.23em;
-    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN","繝｡繧､繝ｪ繧ｪ", sans-serif;
     letter-spacing: 0.5em;
     text-indent: 0.5em;
     top: 33vh;
@@ -370,7 +370,7 @@ a:focus {
 	}
 	.page-title {
 		font-size: 1.25em;
-                font-family: "Hiragino Kaku Gothic ProN","メイリオ";
+                font-family: "Hiragino Kaku Gothic ProN","繝｡繧､繝ｪ繧ｪ";
 	}
 	.slideshow__nav {
 		width: 100%;
