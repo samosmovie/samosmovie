@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="Shift_JIS">
+<head>
+<title>Samo's Movie</title>
+
+                <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/kagami.css" />
+		<link rel="stylesheet" type="text/css" href="css/mirror.css" />
+                <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+		<script>document.documentElement.className = 'js';</script>
+
+</head>
+
+	<body class="kagami-1">
+		<main>
+			<section class="content content--full">
+				<h2 class="page-title">クソコンテンツを、貴方に。</h2>
+				<div class="slideshow">
+					<div class="slide">
+						<div class="mirror" data-visible-area="0.85">
+							<div class="mirror__side mirror__side--one">
+								<img class="mirror__img" src="img/1.png" alt="Some image" />
+							</div>
+							<div class="mirror__side mirror__side--two">
+								<img class="mirror__img" src="img/1.png" alt="Some image" />
+							</div>
+						</div>
+						<h2 class="slide__title">Samo</h2>
+					</div>
+					<div class="slide">
+						<div class="mirror" data-visible-area="0.8">
+							</div>
+						</div>
+					<nav class="slideshow__nav">
+					</nav>
+				</div>
+			</section>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/mirrorFx.js"></script>
+		<script src="js/slideshow.js"></script>
+		<script>
+		(function() {
+
+			function init() {
+				new Slideshow(document.querySelector('.slideshow'));
+			}
+			
+			var startTime = new Date().getTime();
+			imagesLoaded(document.querySelector('main'), function() {
+				var elapsed = new Date().getTime() - startTime,
+					initFn = function() {
+						document.body.classList.remove('loading');
+						setTimeout(init, 50);
+					};
+
+				if( elapsed > 2000) {
+					initFn();
+				}
+				else {
+					setTimeout(initFn, 1000);
+				}
+			});
+
+		})();
+               </script>
+</body>
+</html>
