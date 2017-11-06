@@ -39,29 +39,35 @@
         </script> 
         <script type="text/javascript">
 
-        $(window).load(function() {
-            $('body').sectionMenu().fragmentScroll();
-        });
+        $(document).ready(function() {
+                                $(window).load(function() {
+                                        $('body').sectionMenu().fragmentScroll();
+                                });
 
         </script> 
         <script type="text/javascript">
         $(document).ready(function() {
-            $('#my').novacancy({
-                'reblinkProbability': 0.1,
-                'blinkMin': 0.2,
-                'blinkMax': 0.6,
-                'loopMin': 8,
-                'loopMax': 10,
-                'color': '#ffffff',
-                'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff']
-            }); 
-
-            $('#work').novacancy({
-                'blink': 1,
-                'off': 1,
-                'color': 'Red',
-                'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
-            });
+                $('#my').novacancy({
+                        'reblinkProbability': 0.1,
+                        'blinkMin': 0.2,
+                        'blinkMax': 0.6,
+                        'loopMin': 8,
+                        'loopMax': 10,
+                        'color': '#ffffff',
+                        'glow': ['0 0 80px #ffffff',
+                                '0 0 30px #008000',
+                                '0 0 6px #0000ff'
+                        ]
+                });
+                $('#work').novacancy({
+                        'blink': 1,
+                        'off': 1,
+                        'color': 'Red',
+                        'glow': ['0 0 80px Red',
+                                '0 0 30px FireBrick',
+                                '0 0 6px DarkRed'
+                        ]
+                });
         });
         </script>
 
@@ -73,59 +79,52 @@
 				<h1>Samo's <span>Room</span></h1>
 			</div>
 		</div>
-		<main>
-			<section class="content content--full">
-				<h2 class="page-title">クソコンテンツを、貴方に。</h2>
-				<div class="slideshow">
-					<div class="slide">
-						<div class="mirror" data-visible-area="0.85">
-							<div class="mirror__side mirror__side--one">
-								<img class="mirror__img" src="img/1.png" alt="Some image" />
-							</div>
-							<div class="mirror__side mirror__side--two">
-								<img class="mirror__img" src="img/1.png" alt="Some image" />
-							</div>
-						</div>
-						<h2 class="slide__title">Samo</h2>
-					</div>
-					<div class="slide">
-						<div class="mirror" data-visible-area="0.8">
-							</div>
-						</div>
-					<nav class="slideshow__nav">
-					</nav>
-				</div>
-			</section>
-		</main>
+        <main>
+                <section class="content content--full">
+                        <h2 class="page-title">クソコンテンツを、貴方に。</h2>
+                        <div class="slideshow">
+                                <div class="slide">
+                                        <div class="mirror" data-visible-area="0.85">
+                                                <div class="mirror__side mirror__side--one">
+                                                <img alt="Some image" class="mirror__img" src=
+                                                "img/1.png"></div>
+                                                <div class="mirror__side mirror__side--two">
+                                                <img alt="Some image" class="mirror__img" src=
+                                                "img/1.png"></div>
+                                        </div>
+                                        <h2 class="slide__title">Samo</h2>
+                                </div>
+                                <div class="slide">
+                                        <div class="mirror" data-visible-area="0.8"></div>
+                                </div>
+                                <nav class="slideshow__nav"></nav>
+                        </div>
+                </section>
+        </main>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/mirrorFx.js"></script>
 		<script src="js/slideshow.js"></script>
 		<script>
 		(function() {
-
-			function init() {
-				new Slideshow(document.querySelector('.slideshow'));
-			}
-			
-			var startTime = new Date().getTime();
-			imagesLoaded(document.querySelector('main'), function() {
-				var elapsed = new Date().getTime() - startTime,
-					initFn = function() {
-						document.body.classList.remove('loading');
-						setTimeout(init, 50);
-					};
-
-				if( elapsed > 2000) {
-					initFn();
-				}
-				else {
-					setTimeout(initFn, 1000);
-				}
-			});
-
-		})();
-               </script>
+		        function init() {
+		                new Slideshow(document.querySelector('.slideshow'));
+		        }
+		        var startTime = new Date().getTime();
+		        imagesLoaded(document.querySelector('main'), function() {
+		                var elapsed = new Date().getTime() - startTime,
+		                        initFn = function() {
+		                                document.body.classList.remove('loading');
+		                                setTimeout(init, 50);
+		                        };
+		                if (elapsed > 2000) {
+		                        initFn();
+		                } else {
+		                        setTimeout(initFn, 1000);
+		                }
+		        });
+		})();    
+　　　　　　　　 </script>
 
 	<div class="board">
 	    <p id="my">My</p>
