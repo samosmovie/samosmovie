@@ -8,6 +8,7 @@
                 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fragmentscroll.min.js"></script>
 		<script type="text/javascript" src="js/jquery.sectionmenu.min.js"></script>
+          	<script type="text/javascript" src="js/jquery.novacancy.js"></script>
 　　　　　　　　<script src="js/flickity.pkgd.min.js"></script>
 
 	        <link rel="stylesheet" href="css/footer.css">	
@@ -18,11 +19,13 @@
 		<link rel="stylesheet" type="text/css" href="css/kagami.css" />
 		<link rel="stylesheet" type="text/css" href="css/mirror.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	        <link rel="stylesheet" type="text/css" href="css/neon.css">
 
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400" />
                 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
                 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 	        <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+          	<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
  
                <link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 
@@ -34,7 +37,27 @@
 		});
 
 		</script>
-                
+              
+          	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#my').novacancy({
+				'reblinkProbability': 0.1,
+				'blinkMin': 0.2,
+				'blinkMax': 0.6,
+				'loopMin': 8,
+				'loopMax': 10,
+				'color': '#ffffff',
+				'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff']
+			}); 
+
+			$('#work').novacancy({
+				'blink': 1,
+				'off': 1,
+				'color': 'Red',
+				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+			});
+		});
+	</script>
 
 </head>
 
@@ -98,6 +121,10 @@
 		})();
                </script>
 
+	<div class="board">
+	    <p id="my">My</p>
+            <p id="work">Work</p>
+	</div>
            <div class="carousel"
             data-flickity='{ "autoPlay": 1500, "imagesLoaded": true, "percentPosition": false, "wrapAround": true}'>
             <img src="img/SAMOSMAGIC.png" alt="Samo'sMAGIC" />
