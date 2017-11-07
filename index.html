@@ -16,6 +16,9 @@
         <script src="./js/jquery.sectionmenu.min.js" type="text/javascript">
         </script>
 
+        <script src="./js/novacancy.js" >
+        </script>
+
 	<!-- IE HTML 修復 -->
        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
@@ -33,6 +36,32 @@
         <link href="./css/kagami.css" rel="stylesheet" type="text/css">
         <link href="./css/mirror.css" rel="stylesheet" type="text/css">
         <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+
+       <script type="text/javascript">
+        $(document).ready(function() {
+                $('#my').novacancy({
+                        'reblinkProbability': 0.1,
+                        'blinkMin': 0.2,
+                        'blinkMax': 0.6,
+                        'loopMin': 8,
+                        'loopMax': 10,
+                        'color': '#ffffff',
+                        'glow': ['0 0 80px #ffffff',
+                                '0 0 30px #008000',
+                                '0 0 6px #0000ff'
+                        ]
+                });
+                $('#work').novacancy({
+                        'blink': 1,
+                        'off': 1,
+                        'color': 'Red',
+                        'glow': ['0 0 80px Red',
+                                '0 0 30px FireBrick',
+                                '0 0 6px DarkRed'
+                        ]
+                });
+        });
+        </script>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet">
@@ -86,7 +115,6 @@
 		<script src="./js/anime.min.js"></script>
 		<script src="./js/mirrorFx.js"></script>
 		<script src="./js/slideshow.js"></script>
-                <script src="./js/jquery.novacancy.min.js" ></script>
 
 		<script>
 		(function() {
@@ -108,33 +136,6 @@
 		        });
 		})();    
 　　　　　　　　 </script>
-
-       <script type="text/javascript">
-        $(document).ready(function() {
-                $('#my').novacancy({
-                        'reblinkProbability': 0.1,
-                        'blinkMin': 0.2,
-                        'blinkMax': 0.6,
-                        'loopMin': 8,
-                        'loopMax': 10,
-                        'color': '#ffffff',
-                        'glow': ['0 0 80px #ffffff',
-                                '0 0 30px #008000',
-                                '0 0 6px #0000ff'
-                        ]
-                });
-                $('#work').novacancy({
-                        'blink': 1,
-                        'off': 1,
-                        'color': 'Red',
-                        'glow': ['0 0 80px Red',
-                                '0 0 30px FireBrick',
-                                '0 0 6px DarkRed'
-                        ]
-                });
-        });
-        </script>
-
 
 	<div class="neon">
         <h1>
