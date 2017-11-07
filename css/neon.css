@@ -2,7 +2,7 @@ body {
     background-color: #111111;
 }
 
-.board {
+.neon {
     text-align: center;
     border: 1px solid rgba(255,180,0,0.4);
     border-radius: 4px;
@@ -13,7 +13,7 @@ body {
     width: 99%;
 }
 
-.board p {
+.neon p {
     font-size: 75px;
     font-family: 'Monoton', cursive;
     color: #fff;
