@@ -14,7 +14,11 @@ body {
     width: 99%;
 }
 
-.neon p {
+.neon h1 {
+    font-weight: normal;
+}
+
+.neon span {
     font-size: 75px;
     font-family: 'Monoton', cursive;
     color: #fff;
