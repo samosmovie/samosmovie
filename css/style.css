@@ -1,68 +1,47 @@
-html, body
-{
+html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
-
-body
-{
+body {
 	background: rgb(22, 189, 222) url('../images/background.jpg') no-repeat fixed center center;
 	background-size: cover;
-	color: rgb(200,200,200);
+	color: rgb(200, 200, 200);
 	font-family: 'Raleway', sans-serif;
 	font-size: 12px;
 }
-
-h1
-{
+h1 {
 	color: white;
 	font-weight: 300;
 }
-
-h1 span
-{
+h1 span {
 	color: rgb(22, 189, 222);
 }
-
-a
-{
+a {
 	transition: all 0.3s ease;
 	color: rgb(22, 189, 222);
 	text-decoration: none;
 }
-
-a:hover
-{
+a:hover {
 	color: rgb(59, 77, 86);
 }
-
-ul
-{
+ul {
 	list-style-type: square;
 }
-
-.container
-{
+.container {
 	margin: 0 auto;
 	padding: 10px 30px;
 	min-width: 768px;
 	max-width: 1024px;
 }
-
-.container:before, .container:after
-{
+.container:before, .container:after {
 	content: " ";
 	display: table;
 }
-
-.container:after
-{
+.container:after {
 	clear: both;
 }
-
-#nav
-{
+#nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -72,48 +51,34 @@ ul
 	color: rgb(59, 77, 86);
 	line-height: 40px;
 }
-
-#nav h1
-{
+#nav h1 {
 	float: left;
 	margin: 0;
 	color: rgb(255, 255, 255);
 }
-
-#nav ul
-{
+#nav ul {
 	float: right;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
-
-#nav li
-{
+#nav li {
 	float: left;
 	margin-left: 30px;
 	line-height: 50px;
 }
-
-#nav a
-{
+#nav a {
 	color: #3b4d56;
 }
-
-#nav a:hover
-{
+#nav a:hover {
 	color: #16bdde;
 }
-
-#page section
-{
+#page section {
 	padding-top: 100px;
 	padding-bottom: 400px;
 	font-size: 20px;
 	text-align: center;
 }
-
-#page p
-{
+#page p {
 	line-height: 30px;
 }
