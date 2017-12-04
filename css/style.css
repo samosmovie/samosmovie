@@ -82,3 +82,41 @@ ul {
 #page p {
 	line-height: 30px;
 }
+
+.SAMblock {
+    border: 1px solid rgba(7,194,4,0.4);
+    border-radius: 4px;
+    width: 500px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: #292929;
+    width: 99%;
+    }
+
+@media screen and ( max-width:479px )
+{
+
+    border: 1px solid rgba(7,194,4,0.4);
+    border-radius: 4px;
+    width: auto ;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: #292929;
+    width: 99%;
+    padding: 0 10px ;
+    }
+
+.SAM-h1{
+	color:  #ffffff;
+        font-family: 'Kokoro';
+        line-height: 26px;
+}
+
+.SAMblock .SAM-img{
+       max-width: 40%;
+}
+
+.threed{
+  color: #fafafa;
+  letter-spacing: 0;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 }

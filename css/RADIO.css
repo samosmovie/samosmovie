@@ -26,6 +26,19 @@
     width: 99%;
     }
 
+@media screen and ( max-width:479px )
+{
+
+    border: 1px solid rgba(7,194,4,0.4);
+    border-radius: 4px;
+    width: auto ;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: #292929;
+    width: 99%;
+    padding: 0 10px ;
+    }
+
 .RADI-h1{
 	color:  #ffffff;
         font-family: 'Kokoro';

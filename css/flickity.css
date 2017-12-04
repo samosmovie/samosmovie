@@ -4,6 +4,7 @@ http://flickity.metafizzy.co
 
 .flickity-enabled {
   position: relative;
+  margin: 10px;
 }
 
 .flickity-enabled:focus { outline: none; }
